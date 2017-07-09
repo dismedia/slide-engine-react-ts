@@ -1,0 +1,105 @@
+/* ============== */
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'bpfont';
+  src: url('../../public/fonts/bpfont.eot');
+  src: local('bpfont'), url('../../public/fonts/bpfont.woff') format('woff'), url('../../public/fonts/bpfont.ttf') format('truetype');
+
+
+}
+
+[class*='bpicon-'] {
+  display: block;
+  font: normal normal normal 18px/1 'bpfont';
+  font-size: 32px;
+
+}
+
+.bpicon-home:before {
+  content: '\0041';
+}
+
+.bpicon-profile:before {
+  content: '\0042';
+}
+
+.bpicon-tie:before {
+  content: '\0043';
+}
+
+.bpicon-dollar:before {
+  content: '\0044';
+}
+
+.bpicon-report-flag:before {
+  content: '\0045';
+}
+
+.bpicon-dashboard:before {
+  content: '\0046';
+}
+
+.bpicon-application:before {
+  content: '\0047';
+}
+
+.bpicon-documents:before {
+  content: '\0048';
+}
+
+.bpicon {
+  &__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: max-height 1s;
+    transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  }
+}
+
+/* ============== */
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'icon font';
+  src: url('../../public/fonts/icon-font.eot');
+  src: url('../../public/fonts/icon-font.eot?#iefix') format('embedded-opentype'),
+  url('../../public/fonts/icon-font.woff') format('woff'),
+  url('../../public/fonts/icon-font.ttf') format('truetype'),
+  url('../../public/fonts/icon-font.svg#icon-font') format('svg');
+}
+[class^='icon-']:before{
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'icon font';
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.icon-arrow-down:before{content:'\0041';}
+.icon-arrow-right:before{content:'\0042';}
+.icon-cross:before{content:'\0043';}
+.icon-edit:before{content:'\0044';}
+.icon-email:before{content:'\0045';}
+.icon-filter:before{content:'\0046';}
+.icon-funnel:before{content:'\0047';}
+.icon-hamburger:before{content:'\0048';}
+.icon-history:before{content:'\0049';}
+.icon-info:before{content:'\004a';}
+.icon-info-reverted:before{content:'\004b';}
+.icon-kebab:before{content:'\004c';}
+.icon-map:before{content:'\004d';}
+.icon-phone:before{content:'\004e';}
+.icon-refresh:before{content:'\004f';}
+.icon-remove:before{content:'\0050';}
+.icon-search:before{content:'\0051';}
+.icon-triangle:before{content:'\0052';}
+.icon-upload:before{content:'\0053';}
+.icon-view:before{content:'\0054';}

@@ -1,0 +1,41 @@
+@import 'consts';
+
+@import 'base';
+@import '~normalize.css/normalize';
+
+@import 'fonts/fonts.scss';
+
+
+@import 'application/svgCircleButton';
+@import 'application/slide';
+@import 'application/paperOptionsSet';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: white;
+  font-family: 'Roboto';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+img,svg{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

@@ -1,0 +1,59 @@
+.paperCard{
+
+  display:flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+
+  background: $paperBackgroundColor;
+  box-shadow: $shadow;
+  border-radius: $borderRadius;
+  padding:4em;
+
+
+
+  Paper{
+    width:40%
+
+  }
+
+  .iconWrapper{
+
+    text-align: center;
+    width:24em;
+    margin:1em;
+
+
+
+    .image{
+      transform: scale(1);
+      transform-origin: center center;
+      transition:all 0.3s;
+      filter: saturate(70%);
+
+      &.active{
+
+        filter: saturate(130%) brightness(110%)
+      }
+
+      &:hover{
+        transform: scale(1.2);
+        filter: saturate(100%)
+      }
+    }
+
+
+
+    .label{
+
+      display: block;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      margin: 1em;
+
+    }
+  }
+
+}
+
+
